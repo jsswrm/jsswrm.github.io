@@ -26,17 +26,17 @@
 
 
 p{
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #0d0d0d;
-    font-size: x-large;
+    font-size: 1vw;
 }
 
 .smallfont{
-  font-size: medium;
+  font-size: 0.6vw;
 }
 
 a{
-  font-family:Arial, Helvetica, sans-serif
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #0d0d0d;
   font-size: x-large;
 }
@@ -51,39 +51,6 @@ p.content{
 
 div.spacer{
     height: 10vh;
-}
-
-div.flex-header{
-  background-color: white;
-  display: flex;
-  align-items: center;
-  justify-content: left;
-  height: 10vh;
-  width: 100vw;
-  position: fixed;
-  z-index: 1000;
-    
-}
-
-.carousel{
-  position: relative; 
-}
-
-#carouselimg{
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-div.flex-header-button {
-  height: 5vh;
-  width: 7vw;
-  margin: 2.2vw;
 }
 
 div.overmijcontainer{
@@ -123,10 +90,6 @@ margin: 1vw;
 justify-content: center;
 }
 
-.carousel-inner img {
-    margin: auto;
-}
-
 div.lessen-inhoud-img{
   width: 35vw;
   height: 60vh;
@@ -157,13 +120,11 @@ div.title-box{
     justify-content: space-evenly;
     height: 10vh;
     font-size: 3vw;
+    background-color: #212529;
 }
 
-div.contactstrip{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 10vh;
+p.title-box-text{
+  color: #f2f2f2;
 }
 
 #map1{
@@ -176,12 +137,25 @@ div.contactstrip{
     width: 25vw;
 }
 
+div.contactstrip{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 10vh;
+  background-color: #212529;
+}
+
 div.contactstrip-button {
     display: flex;
     height: 5vh;
     width: 15vw;
     justify-content: space-around;
     align-items: center;
+    background-color: #454e57;
+}
+
+a.contactstrip-button-text{
+  color: #f2f2f2;
 }
 
 .imgsmall{
