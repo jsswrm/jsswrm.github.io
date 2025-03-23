@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-hash/0.2.1/leaflet-hash.js"></script>
+        <script src="https://unpkg.com/maplibre-gl@^5.1.0/dist/maplibre-gl.js"></script>
+        <link href="https://unpkg.com/maplibre-gl@^5.1.0/dist/maplibre-gl.css" rel="stylesheet" />
+        <script src="https://unpkg.com/@terraformer/wkt"></script>
+    </head>
+    <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="150">
+
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top" style="height: 10vh;">
+              <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#overmij">Over mij</a></li>
+                <li class="nav-item"><a class="nav-link" href="#lessen">Lessen</a></li>
+                <li class="nav-item"><a class="nav-link" href="#links">Links</a></li>
+
+            </nav>
+        
+        <div class="spacer"></div>
+
+        <div id="overmij" class="lessen">
+            <div class="lessen-inhoud">
+                <p>
+                    Mijn naam is Jesse Warman, ik ben student op Aeres, waar ik de studie Geo Media & Design doe.                
+                </p>
+                <p class="smallfont">
+                    Ik ben in jaar 3 van mijn opleiding. Ik hou mij tijdens de opleiding veel bezig met stedelijke ontwikkeling, en klimaatproblemen. Ook leer ik verschillende programma’s gebruiken, zoals ArcGIS, QGIS, FME en Adobe programma’s. Waar ik ook mee werk is HTML, CSS en JScript, voor webdevelopment. Deze website is daar een voorbeeld van. Hier zal ik een paar verschillende elementen laten zien die ik tijdens de lessen van Niene Boeijen heb geleerd. Ook zal ik kort vertellen over de inhoud van de verschillende lessen die wij van haar kregen over webdevelopment.                
+                </p>
+                <br>
+                <a class="smallfont" target="_blank" rel="noreffer noopener" href="https://linkedin.com/in/sploorp/">
+                    Mijn LinkedIn
+                </a>
+            </div>
+            <div class="lessen-inhoud">
+                <p>
+                    Het vak HGAV07 wat wij hebben gekregen, werd gegeven door Niene Boeijen, een gastdocent op Aeres.                
+                </p>
+                <p class="smallfont">
+                    Ze heeft haar eigen bedrijf waar ze werkt als web cartograaf. Ook is zij voorzitter bij OSGEO NL. Dit betekent dat ze meer dan geschikt is om ons meer te leren over webdevelopment en vooral de link tussen het web en cartografie. 
+                    <br>Tijdens de lessen hebben we onder andere geleerd op welke verschillende manieren webmaps werken, hoe wij deze kunnen toevoegen aan onze site en hoe we ze kunnen bewerken voor onze eigen doeleinden. 
+                    <br>Als laatste hebben we wat basiskennis gekregen op het gebied van JavaScript, en wat gevorderde kennis van hoe dit toegepast kan worden op webmaps.                
+                </p>
+                <br> 
+                <a class="smallfont" target="_blank" rel="noopener noreffer" href="https://nieneb.nl/online-projects/" >
+                    Website van Niene Boeijen
+                </a>
+            </div>        
+        </div>
+        <div id="lessen" class="spacer"></div>
+        <div class="title-box" style="background-color: #f2f2f2;"> 
+            <p>
+                Les 1
+            </p>
+        </div>
+        <div class="lessen">
+            <div class="lessen-inhoud">
+                <p>
+                    Tijdens deze les begonnen we met het definieren van verschillende begrippen, die in de lessen aan bod zouden komen. De volgende definities heb ik geschreven op basis van verschillende bronnen, waaronder Google, ChatGPT en eigen inzicht.
+                </p>
+                <p class="smallfont">
+                    Kaart - Symbolische weergave van een fysiek gebied, vaak met locatiegebonden data over dit gebied.
+                    <br>Cartografie - Het maken, bijhouden en publiceren van kaarten.
+                    <br>Geo Design - Een methode om verschillende factoren visueel weer te geven om hiermee geografisch gebonden problemen op te kunnen lossen.
+                    <br>Design - Het weergeven van bepaalde informatie of data op een bruikbare, duidelijke en visueel aantrekkelijke manier, afgestemd op de doelgroep.
+                    <br>3D Model - Een model van een bepaakd object of omgeving, virtueel in 3d gezet.
+                    <br>3D Visualisatie - Het weergeven van bepaalde informatie of data op een bruikbare, duidelijke en visueel aantrekkelijke manier, in een virtuele 3D omgeving, afgestemd op de doelgroep.
+                    <br>Augmented Reality - Interactieve visualisatie van een bepaalde ervaring, zo weergegeven dat het samenhangt met de realiteit.
+                    <br>Virtual Reality - Virtuele 3D omgeving waar iemand met behulp van bijvoorbeeld een VR bril in kan zien en kan interageren met deze omgeving.
+                    <br>Geo Dashboard - Een weergave van verschillende geo visualisaties waarmee je overzicht kan houden over deze verschillende kaarten, omgevingen of andere producten.
+                    <br>Data Visualisatie - Het weergeven van bepaalde informatie of data op een bruikbare, duidelijke en visueel aantrekkelijke manier.
+                </p>
+
+            </div>
+            <div class="lessen-inhoud-img"><img class="lesimg" src="img/Capture3.JPG"></div>
+        </div>
+        <div class="lessen">
+            <div class="lessen-inhoud">
+                <p>
+                    We hebben ChatGPT gevraagd een aantal begrippen te definiëren. Dit deden we met de prompt  “Define (begrip) in 3 sentences.”.
+                </p>
+                <p class="smallfont">
+                    <br>Geo-visualization is the use of visual tools to represent geographic data, helping to reveal patterns and trends in location-based information. It combines maps, charts, and other visuals to make complex data easier to understand. This technique is widely used in fields like urban planning, marketing, and environmental science.
+                    <br>Cartography is the art and science of creating maps to represent geographic areas. It involves designing, analyzing, and interpreting spatial data for various purposes. Cartographers use different techniques to ensure maps are accurate, informative, and visually appealing.
+                    <br>Geodesign is the process of using geographic data and design principles to create sustainable solutions for land use and urban planning. It combines spatial analysis, modeling, and collaboration to evaluate the impacts of design decisions. This approach helps ensure informed, data-driven choices for more effective planning and development.
+                </p>
+            </div>
+            <div class="lessen-inhoud-img"><img class="lesimg" src="img/Capture.JPG"></div>
+        </div>
+        <div class="lessen">
+            <div class="lessen-inhoud">
+                <p>
+                    Ook hebben we DeepAI wat afbeeldingen laten genereren, deze zijn rechts van de tekst te zien. 
+                </p>
+                <p class="smallfont">
+                    De prompts waren: “Generate a map.”,”Generate a cartographer.” en “Generate a geo-designer.”
+                    <br>
+                    <br>
+                    Waar ik in deze les veel over nadacht is het gebruik van AI, en de implicaties die dat heeft. Wanneer is AI verantwoordelijk om te gebruiken, wanneer is het ethisch? Iets wat zoiezo waar is, is dat AI heel nuttig is als hulpmiddel bij coderen. Vooral als analysetool kan je het er goed voor gebruiken, het controleren van code kunnen veel AI chatbots tegenwoordig wel. Naar mijn mening is het gebruik van AI niet heel ethisch verantwoord, vooral door de impact op het milieu dat dit heeft. Ik probeer daarom ook mijn gebruik van deze tools te verminderen, en ik heb op deze website geen AI gegenereerde teksten. Natuurlijk zijn de afbeeldingen hier wel afkomstig van AI, maar dat was dan ook de opdracht van de les.
+                </p>
+            </div>
+            <div class="lessen-inhoud-img"><img class="lesimg" src="img/Capture2.JPG"></div>
+        </div>
+
+        <div class="title-box" style="background-color: #f2f2f2;"> 
+            <p>
+                Les 2
+            </p>
+        </div>
+        <div class="lessen">
+            <div class="lessen-inhoud">
+                <p>
+                    Tijdens deze les zijn we begonnen met het ontwikkelen van de website, ook hebben we een GitHub opgezet. Dit is een handig programma waarmee je makkelijk je versies kan bijhouden en publiceren. 
+                </p>
+                <p class="smallfont">
+                    Hier rechts kan je zien hoe dit programma eruit ziet. Je kan hier alle oudere versies terug vinden, en terughalen. Als je uiteindelijk tevreden bent met je bestanden, kan je ze pushen, en zijn ze op het platform van GitHub online te vinden. Ik heb hier tijdens het ontwikkelen alle veranderingen bijgehouden en gemarkeerd.
+                    <br>
+                    <br>
+                    Ik vind de GitHub workflow erg handig, ik heb al meerdere keren met de history tab wijzigingen in code teruggevonden en teruggedraaid. Ook is het voor de docent handig, omdat zij mee kan kijken met mijn code, op afstand, en zonder dat ik mijn website daadwerkelijk online hoef te publiceren. Ook bij het vragen van advies op online forums is een GitHub repository erg handig, zo kan je deze linken, met alle bijbehorende bestanden, zodat andere gebruikers makkelijk uitgebreide feedback kunnen geven.
+                </p>
+            </div>
+            <div class="lessen-inhoud-img"> <img class="lesimg" src="img/Gitscreenshot.JPG"> </div>
+        </div>
+        <div class="lessen">
+            <div class="lessen-inhoud">
+                <p>
+                Ik heb ook een wireframe gemaakt, rechts van de tekst te zien, waar ik de algemene opbouw van de website heb gedefinieerd.
+                </p>
+                <p class="smallfont">
+                Een wireframe maken is erg belangrijk bij het ontwikkelen van een website, omdat het schrijven van code niet echt hetzelfde is als het ontwerpen in een programma zoals illustrator, is het soms moeilijk ideeen om te zetten naar HTML code. Door het eerst te schetsen, en in te delen in bijvoorbeeld div elementen, maak je het een stuk makkelijker voor jezelf. Ik doe dit dan ook altijd, en ben van plan dat te blijven doen. 
+                </p>
+            </div>
+            <div class="lessen-inhoud-img">
+                    <img class="lesimg" src="img/Artboard 1.png">
+            </div>
+        </div>
+
+        <div class="title-box" style="background-color: #f2f2f2;"> 
+            <p>
+                Les 3
+            </p>
+        </div>
+        <div class="lessen">
+            <div class="lessen-inhoud">
+                <p>
+                    Voor deze les hebben we huiswerk gekregen, namelijk het lezen van een aantal interessante artikelen.
+                </p>
+                <p class="smallfont">
+                    Een van deze artikelen was het artikel 
+                    <a style="font-size:small ;" target="_blank" rel="noopener noreffer" href="https://lisacharlottemuth.com/2016/10/21/mappoetry/">
+                        Map Poetry
+                    </a>
+                    , van Lisa Charlotte Muth. Ik vond dit een heel leuk artikel, met veel interessante informatie die mijn perspectief op het gebied van kaartdesign heeft veranderd. Na het lezen van dit artikel was ik geïnspireerd door haar stuk over “internal maps”, dus heb ik een abstracte kaart van mijn stad gemaakt, puur op basis van hoe ik deze ervaar. 
+                </p>
+            </div>
+            <div class="lessen-inhoud-img">
+                <img class="lesimg" src="img/Map Poetry.jpg">
+            </div>
+        </div>
+        <div class="title-box" style="background-color: #f2f2f2;"> 
+            <p>
+                Les 4 & 5
+            </p>
+        </div>
+        <div class="lessen">
+            <div class="lessen-inhoud">
+                <p>
+                    Voor les 4 & 5 heb ik geen samenvatting of reflectie, omdat ik ziek was tijdens de 4e les, en de 5e les niet doorging.
+                </p>
+                <p class="smallfont">
+                    Tijdens deze uitgevallen les zouden we naar de Houtribsluis in Lelystad gaan. Helaas ging dat dus niet door.
+                </p>
+            </div>
+            <div class="lessen-inhoud-img">
+                <img class="lesimg" src="img/Houtribsluizen-brugoverdesluis-Lelystad.jpg">
+            </div>
+        </div>
+
+        <div class="title-box" style="background-color: #f2f2f2;"> 
+            <p>
+                Les 6
+            </p>
+        </div>
+        <div class="lessen">
+            <div class="lessen-inhoud">
+                <p>
+                    Tijdens de 6e en laatste les hebben we ons vooral gericht op gebruikerservaring, dus UX design. Hoe het ontwerp invloed heeft op de interacties van de gebruiker is belangrijk bij het maken van een goede en logische website.
+                </p>
+                <p class="smallfont">
+                    Uiteindelijk gaat het met de meeste websites om interactie, vroeger waren websites minder ingewikkeld, en eigenlijk alleen bedoeld om te lezen. Nu het om interactie gaat, zijn er belangrijke factoren om rekening mee te houden, zoals bijvoorbeeld het vermijden van langzame of geen reactie op interactie. Vooral met webkaarten ben je veel bezig met gebruikersinteracties, deze kaarten zijn namelijk interactief, hebben meerdere knoppen en kunnen bewogen en gemanipuleerd worden. 
+                    <br><br>
+                    Om dit beter te begrijpen hebben we allemaal een verschillende website geanalyseerd, die een interactieve kaart als grootste element heeft. Ik had de website 
+                    <a class="smallfont" target="_blank" rel="noopener noreffer" href='https://race.esa.int'>RACE van ESA</a>
+                    . Wat mij opviel aan de website was dat ik veel verbeterpunten kon bedenken op basis van de ideeën die tijdens de les besproken zijn. Knoppen sorteren, consistente symbologie, ingewikkeld gebruik en overbodige knoppen waren een paar van mijn adviezen.
+                    <br><br>
+                    In het volgende deel van de les zijn we aan de slag gegaan met coderen. We hebben bijvoorbeeld gekeken naar het inladen van Leaflet en Maplibre kaarten. Deze is hier rechts te zien.
+
+                </p>
+            </div>
+            <div class="lessen-inhoud">
+
+                <div id="map1" style="background-color: aliceblue;"></div>
+
+
+            </div>
+        </div>
+        <div class="lessen">
+            <div class="lessen-inhoud">
+                <p>
+                    Interactieve kaarten zijn vooral nuttig als je informatie over wilt brengen, omdat je data op basis van locatie kan weergeven, die de gebruiker via de interactie kan filteren op wat diegene zoekt.
+                </p>
+                <p class="smallfont">
+                    We hebben uitgebreide uitleg over JavaScript gekregen, en hoewel dit heel nuttig is, was het te ingewikkeld om binnen de korte tijd van dit vak goed genoeg te leren. Daarom hebben we het redelijk simpel gehouden, we hebben geleerd hoe we verschillende kaartlagen en stijlbestanden in kunnen laden, hoe we deze stijlbestanden kunnen manipuleren en hoe we via API’s zoals die van PDOK geometrie en andere JSON bestanden kunnen gebruiken. Rechts van deze tekst is een interactieve kaart te zien, die met de knoppen onder de tekst gemanipuleerd kan worden. Ook kan je als je uitzoomt zien dat ik de geometrie van de gemeentegrens van Lelystad heb ingeladen van de API van PDOK.
+                    <br><br>
+                    Ik vond het heel interessant om te zien hoe dit werkte, maar ik vind het jammer dat we zo weinig tijd hadden in de lessen om meer in te gaan op JavaScript. Naar mijn idee is dit namelijk een heel handige tool om te leren voor ons vakgebied, vooral door de mogelijkheden tot interactie die het biedt, en de mogelijkheid om verschillende libraries te importeren voor interactieve kaarten.
+                </p>
+                <div id="KleurButton" class="contactstrip-button" style="background-color:#f2f2f2;"><p>Waterkleur</p></div>
+
+            </div>
+            <div class="lessen-inhoud">
+                <div id="maplibre" style="background-color: aliceblue;"></div>
+            </div>
+        </div>
+        <div class="title-box" style="background-color: #f2f2f2;"> 
+            <p>
+                Reflectie
+            </p>
+        </div>
+        <div class="lessen">
+            <div class="lessen-inhoud">
+                <p>
+                    Ik vond dit een van de leerzaamste en interessantste modules die we tot nu toe hebben gehad. Beide de theorie en de praktijk van dit vak hebben me veel geleerd.
+                </p>
+                <p class="smallfont">
+                    Omdat bijna alle lessen 50/50 verdeeld waren met de ene helft theorie, en de andere helft praktijk, hebben we heel divers les gekregen. Dit werkte voor mij ook goed, want na een tijdje luisteren naar uitleg, ideeën of concepten wil je er ook mee aan de slag. Inhoudelijk was dit vak heel professioneel, dankzij Niene en haar ervaring in de praktijk. Het was soms wel eens moeilijk om het bij te houden, wat ik tot nu niet heel vaak heb meegemaakt met mijn studie. Veel van de concepten en regels die we bij de theorie kregen waren erg interessant, en hebben mijn perspectief op het ontwikkelen van websites veranderd. Ik let nu meer op de gebruikerservaring en hoe deze gebruikers interacteren met de website.
+                    <br><br>
+                    Ook tijdens de praktische delen van de les, waar we aan de gang gingen met het coderen, werden we goed begeleid. Ik heb en had HTML en CSS al goed onder de knie, maar JavaScript vind ik nog steeds moeilijk. De docent heeft haar best gedaan dit zo snel en duidelijk mogelijk uit te leggen, maar er was helaas toch niet genoeg tijd voor. Ik wil in mijn vrije tijd meer aan web development gaan werken, aangezien ik het erg leuk vind en het praktisch erg nuttig vind. 
+                    <br><br>
+                    Hier rechts is een screenshot te zien van bijna alle HTML code die ik heb geschreven, daarnaast heb ik natuurlijk ook nog JavaScript en CSS geschreven. 
+                </p>
+            </div>
+            <div class="lessen-inhoud-img">
+                <img class="lesimg" src="img/code site.JPG">
+            </div>
+        </div>
+        <div class="spacer"></div>
+        <div id="links" class="title-box" style="background-color: #f2f2f2;">
+            <p>Links</p>
+        </div>
+        <div class="contactstrip" style="background-color: #f2f2f2;">
+            <div class="contactstrip-button" style="background-color: white;"><a target="_blank" rel="noopener noreffer" href="mailto:jessewarman23@gmail.com">Email</a></div>
+            <div class="contactstrip-button" style="background-color: white;"><a target="_blank" rel="noopener noreffer" href="https://www.linkedin.com/in/sploorp">LinkedIn</a></div>
+            <div class="contactstrip-button" style="background-color: white;"><a target="_blank" rel="noopener noreffer" href="https://www.instagram.com/zilvere30/">Instagram</a></div>
+            <div class="contactstrip-button" style="background-color: white;"><a target="_blank" rel="noopener noreffer" href="https://www.aereshogeschool.nl/opleidingen/voltijd/bachelor/geo-media-en-design">Geo Media&Design</a></div>
+        </div>
+        <div class="spacer"></div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

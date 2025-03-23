@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@font-face {
+    font-family: 'Century Gothic';
+    src: url('C:/Users/jesse/Desktop/School/HWUD/HWUD01/fonts/GOTHIC.eot');
+    src: url('C:/Users/jesse/Desktop/School/HWUD/HWUD01/fonts/GOTHIC.eot?#iefix') format('embedded-opentype'),
+         url('C:/Users/jesse/Desktop/School/HWUD/HWUD01/fonts/GOTHIC.woff2') format('woff2'),
+         url('C:/Users/jesse/Desktop/School/HWUD/HWUD01/fonts/GOTHIC.woff') format('woff'),
+         url('C:/Users/jesse/Desktop/School/HWUD/HWUD01/fonts/GOTHIC.ttf')  format('truetype'),
+         url('C:/Users/jesse/Desktop/School/HWUD/HWUD01/fonts/GOTHIC.svg#Century Gothic') format('svg');
+}
+@font-face{ 
+    font-family: 'Century Gothic',Bold;
+    src: url('C:/Users/jesse/Desktop/School/HWUD/HWUD01/fonts/GOTHICB.eot');
+    src: url('C:/Users/jesse/Desktop/School/HWUD/HWUD01/fonts/GOTHICB.eot?#iefix') format('embedded-opentype'),
+         url('C:/Users/jesse/Desktop/School/HWUD/HWUD01/fonts/GOTHICB.woff2') format('woff2'),
+         url('C:/Users/jesse/Desktop/School/HWUD/HWUD01/fonts/GOTHICB.woff') format('woff'),
+         url('C:/Users/jesse/Desktop/School/HWUD/HWUD01/fonts/GOTHICB.ttf')  format('truetype'),
+         url('C:/Users/jesse/Desktop/School/HWUD/HWUD01/fonts/GOTHICB.svg#Century Gothic') format('svg');
+            }
+
+
+p{
+    font-family:'Century Gothic';
+    color: #0d0d0d;
+    font-size: x-large;
+}
+
+.smallfont{
+  font-size: medium;
+}
+
+a{
+  font-family:'Century Gothic';
+  color: #0d0d0d;
+  font-size: x-large;
+}
+
+p.title{
+  font-size: xx-large;
+}
+
+p.content{
+  font-size: large;
+}
+
+div.spacer{
+    height: 10vh;
+}
+
+div.flex-header{
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  height: 10vh;
+  width: 100vw;
+  position: fixed;
+  z-index: 1000;
+    
+}
+
+.carousel{
+  position: relative; 
+}
+
+#carouselimg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.flex-header-button {
+  height: 5vh;
+  width: 7vw;
+  margin: 2.2vw;
+}
+
+div.overmijcontainer{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 90vh;
+}
+
+div.overmijcontainer-inhoud{
+  width: 30vw;
+  height: 85vh;
+  padding: 2%;
+ }
+
+div.overmijcontainer2{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 85vh;
+}
+
+div.lessen{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 75vh;
+}
+
+div.lessen-inhoud{
+display: flex;
+flex-direction: column;
+width: 35vw;
+height: 60vh;
+padding: 2%;
+margin: 1vw;
+justify-content: center;
+}
+
+.carousel-inner img {
+    margin: auto;
+}
+
+div.lessen-inhoud-img{
+  width: 35vw;
+  height: 60vh;
+}
+
+.lesimg{
+  width: 35vw;
+  height: 60vh;
+  object-fit: contain;
+} 
+
+div.placeholder2{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 65vh;
+}
+
+div.placeholder2-inhoud{
+    width: 45vw;
+    height: 50vh;
+    padding: 2%;
+ }
+
+div.title-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 10vh;
+    font-size: 3vw;
+}
+
+div.contactstrip{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 10vh;
+}
+
+#map1{
+    height: 50vh;
+    width: 25vw;
+}
+
+#maplibre{
+    height: 50vh;
+    width: 25vw;
+}
+
+div.contactstrip-button {
+    display: flex;
+    height: 5vh;
+    width: 15vw;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.imgsmall{
+  width: 150px;
+  object-fit: contain;
+}
+
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  height: 100vh;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
